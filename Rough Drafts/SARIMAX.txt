@@ -1,0 +1,19 @@
+SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous factors) is a statistical model that extends the ARIMA (AutoRegressive Integrated Moving Average) model by incorporating seasonality and external variables.
+
+When you're looking to integrate SARIMAX with advanced machine learning (ML) models, you typically use SARIMAX to capture the linear aspects of the time series data (like trends and seasonality), and then use ML models to capture nonlinear relationships and complex patterns. Here are some advanced ML models that can be used alongside or on top of SARIMAX predictions:
+
+1. Random Forests: An ensemble learning method for classification and regression that uses a multitude of decision trees at training time. It’s good for capturing complex, nonlinear relationships in data.
+
+2. Gradient Boosting Machines (GBM): This is another ensemble technique that builds trees one at a time, where each new tree helps to correct errors made by previously trained trees. GBM is effective in predictive tasks where complexity and precision are crucial.
+
+3. Support Vector Machines (SVM): Primarily used for classification problems but can be extended to regression (SVR). SVMs can model nonlinear relationships using kernel functions.
+
+4. Neural Networks: Deep learning models like feedforward, convolutional, and recurrent neural networks (including LSTM and GRU) are particularly powerful in capturing intricate patterns in data. They can be particularly useful if you have high-dimensional time series data.
+
+5. XGBoost: An optimized distributed gradient boosting library that is efficient, flexible, and portable. It's a powerful approach that has been winning many machine-learning competitions.
+
+6. LightGBM: A gradient boosting framework that uses tree-based learning algorithms and is designed for distributed and efficient training.
+
+7. CatBoost: An algorithm that uses gradient boosting on decision trees and is designed to work well with categorical features.
+
+When combining these models with SARIMAX, one approach is to use the output of the SARIMAX model as an input feature for the ML models, possibly alongside other features. This kind of hybrid modeling can help capture both the linear and non-linear aspects of the data, potentially leading to more accurate and robust predictions. It's also important to note that each of these models comes with its own set of hyperparameters that need to be tuned to your specific dataset.
