@@ -61,7 +61,12 @@ The final stage of the project involves multi-step forecasting for each crisis t
 </p>
 
 ---
+### Technical Interpretation:
+* **Systemic Risk Escalation:** The model predicts a steady upward trajectory in systemic risk, rising to a probability of **22.30% by 2036**. This suggests that as global markets become more interconnected, the "contagion effect" of localized shocks is likely to intensify.
+* **Banking Sector Fragility:** Forecasts suggest a stable but persistent risk probability of **14.80%**. The cyclical "spikes" in the forecast indicate that banking institutions remain highly sensitive to interest rate pivots and debt cycles.
+* **Currency & Inflation Volatility:** Projections show high-amplitude swings in currency risk. This reflects the "Behavioral" aspect of the study—investor sentiment and panic often lead to self-fulfilling prophecies in currency devaluations.
 
+---
 ## 🛠 Tech Stack
 * **Languages:** Python (Pandas, NumPy, Scipy)
 * **Econometrics:** Statsmodels (ARIMA, Time-Series Decomposition, ACF/PACF)
