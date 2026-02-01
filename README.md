@@ -2,70 +2,78 @@
 **Quantitative Deep-Dive into Global Systemic Risk (1800 – Present)**
 
 ## 📌 Project Overview
-This repository provides a longitudinal study of global financial instability, analyzing over two centuries of economic shocks. By synthesizing banking, currency, inflation, and systemic crisis data, the studio identifies historical precursors to market collapses and forecasts future regimes of instability using time-series econometrics.
+This repository serves as a professional analytical framework for studying the long-term patterns of global financial instability. Utilizing over 200 years of historical data, this project examines the evolution and interplay of four primary crisis types: **Banking, Systemic, Currency, and Inflation**. 
+
+The objective is to move beyond simple visualization to provide statistical evidence of how economic shocks propagate across borders and time, culminating in predictive forecasting through 2050.
 
 ---
 
-## 🌎 Geospatial Crisis Distribution
-A core component of this research is mapping the regional density of crises. The geospatial analysis reveals that while "Inflation Crises" are historically concentrated in Latin America and portions of Africa, "Banking Crises" show significant historical clusters in North America and Western Europe.
+## 🌎 Geospatial Risk Distribution
+Understanding the geographical "footprint" of financial instability is critical for regional risk assessment. This analysis utilizes geospatial mapping to identify historical hotspots for specific crisis regimes.
 
 <p align="center">
-  <img src="images/global_summary_map.jpg" width="850" alt="Global Crisis Summary Map">
+  <img src="images/global_summary_map.png" width="850" alt="Global Crisis Summary Map">
+</p>
+
+**Key Finding:** Historical data reveals significant "Crisis Specialization" across regions—with Inflation crises showing higher density in emerging markets, while Banking crises cluster in highly integrated financial hubs.
+
+---
+
+## 🔍 Comprehensive Crisis Analysis (4-Type Model)
+
+### 1. Longitudinal Frequency (1800–Present)
+This multi-panel time-series analysis tracks the annual frequency of all four crisis types. It effectively captures the "Great Moderation" and the subsequent resurgence of volatility in the modern era.
+
+<p align="center">
+  <img src="images/yearly_crises_panel.png" width="900" alt="Yearly Crisis Panel">
+</p>
+
+### 2. Cumulative Systemic Stress
+The cumulative growth chart identifies critical "inflection points" in global economic history. Post-1970 data shows a marked acceleration in systemic risk, coinciding with the shift to floating exchange rates and increased capital mobility.
+
+<p align="center">
+  <img src="images/cumulative_crises.png" width="900" alt="Cumulative Crisis Growth">
 </p>
 
 ---
 
-## 🔍 Quantitative Insights & Features
+## 🧪 Statistical Rigor & Diagnostics
 
-### 1. Cumulative Risk Growth
-Tracking cumulative frequency since 1800 highlights a significant "inflection point" post-1970. This period correlates with increased global financial integration and the shift away from the Gold Standard, leading to a visible acceleration in Banking and Currency shocks.
+### Feature Correlation
+Using a Pearson Correlation Heatmap, I quantified the dependencies between crisis types. The **0.73 correlation** between Banking and Systemic crises is a primary lead indicator used in the predictive model.
 
 <p align="center">
-  <img src="images/cumulative_crises.png" width="900" alt="Cumulative Crisis Analysis">
+  <img src="images/correlation_heatmap.png" width="600" alt="Correlation Heatmap">
 </p>
 
-### 2. Statistical Correlation Heatmap
-The Pearson Correlation Heatmap identifies critical dependencies between crisis types. A standout finding is the **0.73 correlation** between Banking Crises and Systemic Crises, suggesting that banking sector failures are the primary driver of broader systemic collapses in modern economies.
+### Residual Diagnostics
+To ensure model integrity, I performed exhaustive residual diagnostics. These tests (ACF, KDE, and Histogram of Residuals) confirm that the models are well-specified and that the errors are white noise, satisfying the Gauss-Markov assumptions for unbiased estimation.
 
 <p align="center">
-  <img src="images/correlation_heatmap.png" width="650" alt="Correlation Heatmap">
+  <img src="images/residual_diagnostics.png" width="850" alt="Residual Diagnostics Panel">
 </p>
 
 ---
 
-## 🧪 Model Diagnostics & Predictive Modeling
-
-### Residual Validation
-To ensure the integrity of the predictive models, I performed exhaustive **Residual Diagnostics**. Below is the diagnostic panel for the Banking Crisis model, which confirms the model is well-specified with normally distributed residuals and minimal autocorrelation (ACF).
+## 📈 Forecasting the Next Frontier (2020–2050)
+The final stage of the project involves multi-step forecasting for each crisis type. These models project potential volatility regimes over the next three decades based on historical cyclicality.
 
 <p align="center">
-  <img src="images/residual_diagnostics.png" width="850" alt="Banking Crisis Residual Panel">
+  <img src="images/banking_forecast.png" width="450" alt="Banking Forecast">
+  <img src="images/systemic_forecast.png" width="450" alt="Systemic Forecast">
 </p>
-
-* **ACF Plot:** Validates that residuals are White Noise (no remaining patterns).
-* **Kernel Density Plot:** Confirms the error distribution is centered around zero, indicating unbiased predictions.
-
-### Future Forecasting (2020 – 2050)
-Using multi-step time-series forecasting, I projected potential crisis regimes into 2050. These models highlight expected periods of volatility based on historical cycle lengths and long-term economic trends.
-
 <p align="center">
-  <img src="images/banking_forecast.png" width="900" alt="Banking Crisis Forecast">
-  <br>
-  <em>Multi-step Forecast for Banking Crisis (Red) alongside Observed Data (Blue).</em>
+  <img src="images/currency_forecast.png" width="450" alt="Currency Forecast">
+  <img src="images/inflation_forecast.png" width="450" alt="Inflation Forecast">
 </p>
 
 ---
 
 ## 🛠 Tech Stack
-* **Data Engineering:** Python, Pandas, NumPy
-* **Statistical Analysis:** Statsmodels (ARIMA/SARIMA Diagnostics), Scipy
-* **Visualization:** Matplotlib, Seaborn, Geopandas
-* **Environment:** Google Colab / Jupyter Notebooks
+* **Languages:** Python (Pandas, NumPy, Scipy)
+* **Econometrics:** Statsmodels (ARIMA, Time-Series Decomposition, ACF/PACF)
+* **Visualization:** Matplotlib, Seaborn, Geopandas (Geospatial Mapping)
+* **Environment:** Google Colab / Jupyter
 
-## 📂 Repository Architecture
-```text
-├── data/               # Raw economic datasets (1800-Present)
-├── images/             # High-resolution research charts
-├── notebooks/          # Full EDA and Time-Series Forecasting
-├── src/                # Modular Python scripts for data cleaning
-└── requirements.txt    # Production dependencies
+---
+*Maintained by **DHARKIVE-STUDIO***
