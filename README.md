@@ -46,13 +46,6 @@ Using a Pearson Correlation Heatmap, I quantified the dependencies between crisi
   <img src="images/correlation_heatmap.png" width="600" alt="Correlation Heatmap">
 </p>
 
-### Residual Diagnostics
-To ensure model integrity, I performed exhaustive residual diagnostics. These tests (ACF, KDE, and Histogram of Residuals) confirm that the models are well-specified and that the errors are white noise, satisfying the Gauss-Markov assumptions for unbiased estimation.
-
-<p align="center">
-  <img src="images/residual_diagnostics.png" width="850" alt="Residual Diagnostics Panel">
-</p>
-
 ---
 
 ## 📈 Forecasting the Next Frontier (2020–2050)
